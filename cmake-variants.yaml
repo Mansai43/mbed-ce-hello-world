@@ -1,0 +1,17 @@
+
+buildType:
+  default: Release
+  choices:
+    Release:
+      short: Release
+      long: Optimized build
+      buildType: Release
+
+board:
+  default: LPC1768
+  choices:
+    LPC1768:
+      short: LPC1768
+      settings:
+        MBED_TARGET: LPC1768
+        UPLOAD_METHOD: MBED
