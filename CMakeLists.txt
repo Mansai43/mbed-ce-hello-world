@@ -34,6 +34,8 @@ set(MBED_APP_JSON_PATH mbed_app.json5)
 ### Include Mbed toolchain setup file
 include(mbed-os/tools/cmake/mbed_toolchain_setup.cmake)
 
+set(CMAKE_TRY_COMPILE_TARGET_TYPE "STATIC_LIBRARY")
+project(SCL_Control C CXX ASM)
 ### Set up your project.
 # The project name will be made available in the ${PROJECT_NAME} variable.
 # If you like, you can specify a version here, which CMake will make available in the ${PROJECT_VERSION} variable.
