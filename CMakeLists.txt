@@ -67,7 +67,7 @@ add_subdirectory(mbed-os)
 ### add executable (necessary everytime)
 # This will compile an elf file named the same as the project with the given source files.
 add_executable(${PROJECT_NAME} main.cpp)
-
+set_target_properties(SCL_Control PROPERTIES OUTPUT_NAME "SCL_Controller")
 ######################################################################################################
 ### Link libraries block
 #[[For more about this configuration visit wiki page MbedOS-configuration
